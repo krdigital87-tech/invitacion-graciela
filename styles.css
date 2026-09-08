@@ -1,0 +1,1089 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    background: #0b0b0b;
+
+    color: #111;
+
+    overflow-x: hidden;
+}
+
+
+
+/* ==============================
+   INVITACIÓN
+============================== */
+
+.invitacion {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #fff9ed;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+/* ==============================
+   PORTADA
+============================== */
+
+.portada {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding:
+        130px
+        8%
+        90px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf0,
+            #fff7e8
+        );
+}
+
+
+/* BORDE DORADO */
+
+.portada::after {
+    content: "";
+
+    position: absolute;
+
+    top: 24px;
+    left: 5%;
+
+    width: 90%;
+    height: calc(100% - 48px);
+
+    border: 3px solid #c79322;
+
+    border-radius: 45px;
+
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+
+
+/* CONTENIDO */
+
+.portada-contenido {
+    position: relative;
+
+    z-index: 10;
+
+    width: 100%;
+
+    max-width: 900px;
+}
+
+
+
+/* ==============================
+   DECORACIONES PNG
+============================== */
+
+.decoracion {
+    position: absolute;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    object-fit: contain;
+}
+
+
+/* FLOR ARRIBA */
+
+.flor-arriba {
+    top: -15px;
+    left: -10px;
+
+    width: clamp(
+        260px,
+        30vw,
+        430px
+    );
+}
+
+
+/* GLOBOS ARRIBA */
+
+.globos-arriba {
+    top: -10px;
+    right: -10px;
+
+    width: clamp(
+        210px,
+        24vw,
+        340px
+    );
+}
+
+
+
+/* ==============================
+   TITULO SUPERIOR
+============================== */
+
+.titulo-superior {
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            44px,
+            6vw,
+            72px
+        );
+
+    color: #111;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* ==============================
+   CORONA
+============================== */
+
+.corona {
+    width: 80px;
+
+    margin:
+        0
+        auto
+        12px;
+}
+
+.corona svg {
+    display: block;
+
+    width: 100%;
+}
+
+
+
+/* ==============================
+   GRACIELA
+============================== */
+
+.portada h1 {
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            100px,
+            16vw,
+            180px
+        );
+
+    line-height: .9;
+
+    font-weight: normal;
+
+    color: #050505;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        2px 2px 0 #c99523,
+        4px 4px 0 #f0cf68;
+}
+
+
+
+/* ==============================
+   SEPARADORES
+============================== */
+
+.separador {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin:
+        25px
+        auto;
+}
+
+.separador span {
+    width: 135px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #bf8d1c
+        );
+}
+
+.separador span:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            #bf8d1c,
+            transparent
+        );
+}
+
+.separador strong {
+    font-family:
+        Georgia,
+        serif;
+
+    color: #bd891a;
+
+    font-size: 34px;
+
+    font-weight: normal;
+}
+
+
+
+/* ==============================
+   FRASE
+============================== */
+
+.frase {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            32px,
+            4vw,
+            47px
+        );
+
+    line-height: 1.25;
+
+    color: #111;
+}
+
+
+
+/* ==============================
+   INFORMACIÓN
+============================== */
+
+.informacion {
+    width: 82%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding:
+        90px
+        0;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+
+/* FILAS */
+
+.dato {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding:
+        30px
+        0;
+
+    border-bottom:
+        1px solid
+        rgba(190, 140, 25, .22);
+}
+
+
+
+/* ICONOS */
+
+.icono {
+    width: 80px;
+    height: 80px;
+
+    min-width: 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        4px solid
+        #c89522;
+
+    border-radius: 50%;
+
+    background: #fffaf0;
+}
+
+.icono svg {
+    width: 42px;
+    height: 42px;
+
+    fill: none;
+
+    stroke: #111;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+
+/* TEXTO */
+
+.dato-texto {
+    flex: 1;
+
+    padding-left: 22px;
+
+    border-left:
+        3px solid
+        #c89522;
+}
+
+.dato h3 {
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 20px;
+
+    margin-bottom: 4px;
+}
+
+.dato p {
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            24px,
+            3vw,
+            34px
+        );
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.direccion {
+    margin-top: 8px;
+
+    font-size:
+        18px !important;
+
+    font-weight:
+        400 !important;
+
+    line-height:
+        1.4 !important;
+}
+
+
+
+/* ==============================
+   GOOGLE MAPS
+============================== */
+
+.boton-mapa {
+    display: inline-block;
+
+    margin-top: 16px;
+
+    padding:
+        13px
+        23px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ad7411,
+            #f2ce63,
+            #ad7411
+        );
+
+    color: #080808;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.boton-mapa:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(150, 100, 10, .24);
+}
+
+
+
+/* ==============================
+   SHOW
+============================== */
+
+.show {
+    max-width: 680px;
+
+    margin:
+        60px
+        auto
+        0;
+
+    padding:
+        28px
+        20px;
+
+    background: #080808;
+
+    border:
+        4px solid
+        #c89422;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 0 3px #eed06c;
+}
+
+.show span {
+    display: block;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            52px,
+            7vw,
+            78px
+        );
+
+    color: #e8bb43;
+
+    line-height: 1;
+}
+
+.show strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    color: #fff;
+
+    font-size:
+        clamp(
+            24px,
+            3vw,
+            31px
+        );
+}
+
+
+
+/* ==============================
+   CONFIRMACIÓN
+============================== */
+
+.confirmacion {
+    width: 82%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding:
+        90px
+        0
+        110px;
+
+    text-align: center;
+}
+
+.confirmacion h2 {
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            60px,
+            8vw,
+            90px
+        );
+
+    font-weight: normal;
+
+    color: #111;
+}
+
+.subtitulo {
+    margin:
+        5px
+        auto
+        38px;
+
+    color: #444;
+
+    font-size: 17px;
+}
+
+
+
+/* ==============================
+   FORMULARIO
+============================== */
+
+form {
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 32px;
+
+    text-align: left;
+
+    border:
+        2px solid
+        #c89522;
+
+    border-radius: 24px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .7
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.07);
+}
+
+.grupo {
+    margin-bottom: 23px;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #111;
+
+    font-weight: 700;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 16px;
+
+    border:
+        1px solid
+        #c89a28;
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 16px;
+
+    color: #111;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    box-shadow:
+        0 0 0 3px
+        rgba(200, 150, 30, .17);
+}
+
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #aa7210,
+            #f0cb60,
+            #aa7210
+        );
+
+    color: #080808;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+button:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 9px 22px
+        rgba(150, 100, 10, .24);
+}
+
+button:disabled {
+    opacity: .6;
+
+    cursor: not-allowed;
+}
+
+
+
+/* MENSAJE */
+
+.mensaje {
+    max-width: 650px;
+
+    margin:
+        28px
+        auto
+        0;
+
+    color: #896110;
+
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    min-height: 65vh;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding:
+        120px
+        10%;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff9ed,
+            #fff5e3
+        );
+}
+
+.footer-contenido {
+    position: relative;
+
+    z-index: 10;
+}
+
+footer h2 {
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            75px,
+            10vw,
+            105px
+        );
+
+    font-weight: normal;
+
+    color: #080808;
+}
+
+footer p {
+    margin-top: 12px;
+
+    color: #444;
+
+    font-size: 17px;
+}
+
+
+
+/* DECORACIONES ABAJO */
+
+.globos-abajo {
+    left: -10px;
+    bottom: -5px;
+
+    width:
+        clamp(
+            200px,
+            25vw,
+            350px
+        );
+
+    transform: scaleX(-1);
+}
+
+.flor-abajo {
+    right: -10px;
+    bottom: -5px;
+
+    width:
+        clamp(
+            260px,
+            31vw,
+            430px
+        );
+}
+
+
+
+/* ==============================
+   CELULAR
+============================== */
+
+@media (max-width: 700px) {
+
+    .portada {
+        min-height: 90vh;
+
+        padding:
+            140px
+            9%
+            75px;
+    }
+
+
+    .portada::after {
+        top: 14px;
+
+        left: 4%;
+
+        width: 92%;
+
+        height:
+            calc(
+                100%
+                - 28px
+            );
+
+        border-width: 2px;
+
+        border-radius: 26px;
+    }
+
+
+    .flor-arriba {
+        width: 190px;
+
+        left: -15px;
+    }
+
+
+    .globos-arriba {
+        width: 145px;
+
+        right: -12px;
+    }
+
+
+    .titulo-superior {
+        font-size:
+            clamp(
+                37px,
+                10vw,
+                49px
+            );
+    }
+
+
+    .corona {
+        width: 57px;
+    }
+
+
+    .portada h1 {
+        font-size:
+            clamp(
+                85px,
+                26vw,
+                118px
+            );
+    }
+
+
+    .frase {
+        font-size:
+            clamp(
+                28px,
+                8vw,
+                35px
+            );
+    }
+
+
+    .separador span {
+        width: 70px;
+    }
+
+
+    .informacion {
+        width: 84%;
+
+        padding:
+            55px
+            0
+            75px;
+    }
+
+
+    .dato {
+        gap: 12px;
+
+        padding:
+            24px
+            0;
+    }
+
+
+    .icono {
+        width: 56px;
+        height: 56px;
+
+        min-width: 56px;
+
+        border-width: 3px;
+    }
+
+
+    .icono svg {
+        width: 29px;
+        height: 29px;
+    }
+
+
+    .dato-texto {
+        padding-left: 12px;
+
+        border-left-width: 2px;
+    }
+
+
+    .dato h3 {
+        font-size: 15px;
+    }
+
+
+    .dato p {
+        font-size:
+            clamp(
+                18px,
+                5vw,
+                23px
+            );
+    }
+
+
+    .direccion {
+        font-size:
+            14px !important;
+    }
+
+
+    .boton-mapa {
+        padding:
+            11px
+            14px;
+
+        font-size: 12px;
+    }
+
+
+    .show {
+        margin-top: 45px;
+
+        padding:
+            22px
+            12px;
+    }
+
+
+    .show span {
+        font-size:
+            clamp(
+                44px,
+                12vw,
+                58px
+            );
+    }
+
+
+    .show strong {
+        font-size: 21px;
+    }
+
+
+    .confirmacion {
+        width: 84%;
+
+        padding:
+            70px
+            0
+            100px;
+    }
+
+
+    form {
+        padding:
+            24px
+            18px;
+    }
+
+
+    footer {
+        min-height: 58vh;
+
+        padding:
+            100px
+            10%
+            130px;
+    }
+
+
+    .globos-abajo {
+        width: 150px;
+
+        left: -15px;
+    }
+
+
+    .flor-abajo {
+        width: 185px;
+
+        right: -18px;
+    }
+
+}
